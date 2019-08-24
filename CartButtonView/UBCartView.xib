@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UBCartView" customModule="CartButtonView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXu-ad-17S" customClass="BBCyclingLabel">
+                    <rect key="frame" x="35" y="0.0" width="60" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ll2-XI-XeL"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uTE-NB-jzb">
+                    <rect key="frame" x="35" y="0.0" width="60" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="a8u-eK-Q0B"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjc-Id-u67">
+                    <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="Zq8-n5-Vgb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="27"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="remove">
+                        <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickMins:" destination="iN0-l3-epB" eventType="touchUpInside" id="w7k-Mc-EMP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ep0-Uq-d7Q">
+                    <rect key="frame" x="95" y="0.0" width="35" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="iem-er-Nyh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="27"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="add">
+                        <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickPls:" destination="iN0-l3-epB" eventType="touchUpInside" id="agT-kE-ZuJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2n-JQ-6H6">
+                    <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickAddToCart:" destination="iN0-l3-epB" eventType="touchUpInside" id="PoC-eq-Y73"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.074509803920000006" green="0.69803921570000005" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uTE-NB-jzb" firstAttribute="leading" secondItem="Rjc-Id-u67" secondAttribute="trailing" id="2Fe-sy-J9A"/>
+                <constraint firstItem="uTE-NB-jzb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EEg-DO-j0Y"/>
+                <constraint firstItem="Rjc-Id-u67" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="F51-6G-AvU"/>
+                <constraint firstItem="uTE-NB-jzb" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Jzt-EG-a7c"/>
+                <constraint firstItem="g2n-JQ-6H6" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="KzD-AO-BrF"/>
+                <constraint firstItem="g2n-JQ-6H6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="L5y-3Y-BWv"/>
+                <constraint firstItem="EXu-ad-17S" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MHC-50-iQ3"/>
+                <constraint firstItem="uTE-NB-jzb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MrR-Ba-668"/>
+                <constraint firstItem="g2n-JQ-6H6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OVF-me-BBE"/>
+                <constraint firstItem="ep0-Uq-d7Q" firstAttribute="leading" secondItem="uTE-NB-jzb" secondAttribute="trailing" id="R4G-i9-hwj"/>
+                <constraint firstItem="ep0-Uq-d7Q" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="VxZ-3u-5pw"/>
+                <constraint firstItem="g2n-JQ-6H6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YTt-1e-fGf"/>
+                <constraint firstItem="EXu-ad-17S" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fM9-ay-VQI"/>
+                <constraint firstItem="ep0-Uq-d7Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="k8c-aY-oij"/>
+                <constraint firstItem="EXu-ad-17S" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lK0-wE-eqw"/>
+                <constraint firstItem="Rjc-Id-u67" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="or1-7E-hib"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnAdd" destination="g2n-JQ-6H6" id="rJZ-Od-goY"/>
+                <outlet property="btnMins" destination="Rjc-Id-u67" id="qfi-b2-q7u"/>
+                <outlet property="btnPls" destination="ep0-Uq-d7Q" id="yvl-Nb-zb6"/>
+                <outlet property="contrainLabel" destination="a8u-eK-Q0B" id="cQe-Qq-WzP"/>
+                <outlet property="scrollUpLabel" destination="EXu-ad-17S" id="dtq-Nh-2VZ"/>
+            </connections>
+            <point key="canvasLocation" x="-22.399999999999999" y="-40.479760119940032"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="25" height="25"/>
+        <image name="remove" width="25" height="25"/>
+    </resources>
+</document>
