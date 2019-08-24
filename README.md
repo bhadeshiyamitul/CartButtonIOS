@@ -1,10 +1,11 @@
 # CartButtonIOS
 iOS Cart Button
 
+![alt text](https://github.com/unusedbrainstudio/CartButtonIOS/blob/master/CartButtonView/addtoCartButton.gif)
+
+
+
 For More Detail visit [www.unusedbrain.com](https://unusedbrain.com/blog/2019/08/24/add-to-cart-button/)
-
-
-
 
 Now a days all types of shopping are done by mobile apps. Here i have done simple component for add to cart just simple tap.  we can use this cart button any kind of product that related to quantity.  
 
